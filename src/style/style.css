@@ -1,0 +1,89 @@
+/* style.css */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 다크 모드 적용 */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* 컨테이너 스타일 */
+.marvel-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 카드 스타일 */
+.marvel-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.marvel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* 이미지 스타일 */
+.marvel-card img {
+  width: 100%;
+  height: 300px; /* 일정한 높이 설정 */
+  object-fit: cover; /* 이미지 비율 유지하며 크기 조정 */
+  display: block;
+}
+
+/* 카드 스타일 */
+.marvel-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* 카드 내용 세로로 쌓기 */
+  height: 350px; /* 카드 높이 고정 */
+}
+
+/* 이름 스타일 */
+.marvel-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  flex-grow: 1; /* 여백을 자동으로 차지 */
+}
+
+/* 호버 시 추가 정보 */
+.marvel-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  /* padding: 10px; */
+  text-align: center;
+}
+
+.marvel-card:hover .marvel-info {
+  opacity: 1;
+}

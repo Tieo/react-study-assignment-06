@@ -1,0 +1,138 @@
+/* CharacterDetail.css */
+.character-detail-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* background-color: #fff; */
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.character-header {
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin-bottom: 40px;
+  gap: 30px; /* 이미지와 텍스트 간의 간격 */
+}
+
+.character-image {
+  max-width: 600px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.character-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.character-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.character-info {
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .character-detail-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: #fff; */
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+
+  .character-image {
+    max-width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .character-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character-image {
+    margin-bottom: 20px;
+  }
+
+  .character-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* CharacterDetail.css */
+.back-to-home-button {
+  padding: 1px 1px;
+  font-size: 30px;
+  font-weight: 1000;
+  background-color: #e10000; /* 마블 빨간색 */
+  color: white;
+  border: 2px solid #e10000;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  display: inline-block;
+  /* margin-top: 20px; */
+  text-align: center;
+  width: 126px;
+  align-self: center;
+}
+
+.back-to-home-button-text {
+  color: white;
+  text-decoration: none;
+}
+.back-to-home-button-text:hover {
+  text-decoration: none;
+}
+.back-to-home-button:hover {
+  transform: scale(1.05); /* hover 시 크기 살짝 키우기 */
+}
+
+.back-to-home-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(225, 0, 0, 0.7); /* focus 시 빛나는 효과 */
+}
