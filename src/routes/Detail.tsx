@@ -29,7 +29,26 @@ function Detail() {
       {loading ? (
         <h1 style={{ padding: '20px' }}>Your Characters are Comming! 🚀</h1>
       ) : (
-        <Character {...characterData} />
+        <Character id={0} name={''} description={''} modified={''} thumbnail={{
+            path: '',
+            extension: ''
+          }} comics={{
+            available: 0,
+            collectionURI: '',
+            items: []
+          }} series={{
+            available: 0,
+            collectionURI: '',
+            items: []
+          }} stories={{
+            available: 0,
+            collectionURI: '',
+            items: []
+          }} events={{
+            available: 0,
+            collectionURI: '',
+            items: []
+          }} urls={[]} {...characterData} />
       )}
     </div>
   );

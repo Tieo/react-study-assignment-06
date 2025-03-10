@@ -7,7 +7,7 @@ export default interface CharacterType {
     path: string;
     extension: string;
   };
-  resourceURI: string;
+  // resourceURI: string;
   comics: {
     available: number;
     collectionURI: string;

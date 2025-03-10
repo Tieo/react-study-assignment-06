@@ -12,7 +12,7 @@ const Marvel = ({
   name,
   comics,
   events,
-  resourceURI,
+  // resourceURI,
   series,
   stories,
   thumbnailPath,
